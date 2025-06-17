@@ -13,21 +13,16 @@ Welcome to my blog! I'm Andrew Moores, and this is where I share my thoughts on 
 I write about:
 
 - Software development tools and workflows
-- Productivity applications like Obsidian
-- AI Tools including Claude Code
-- Domain Driven Design
-- Designing and building APIs including OpenAPI specs and Imposter
+- Productivity applications like [Obsidian](https://obsidian.md/)
+- AI Tools including [Claude Code](https://claude.ai/code)
+- [Domain Driven Design](https://martinfowler.com/bliki/DomainDrivenDesign.html)
+- Designing and building APIs including [OpenAPI specs](https://spec.openapis.org/oas/latest.html) and [Imposter](https://www.imposter.sh/)
 
 ## Background
 
-[Add your professional background, education, or experience here]
+I am a software engineer who has been programming for 35 years, currently in Java, TypeScript, and Python.
 
 ## About this site
 
-This blog is built using Hugo, a fast and flexible static site generator, with the minimal xmin theme. The entire site was created and configured using Claude Code, Anthropic's AI-powered development assistant. From setting up the initial Hugo installation to customizing the theme and creating content, Claude Code was used to do all the configuration and demonstrate the power of AI-assisted web development.
+This blog is built using [Hugo](https://gohugo.io/), a fast and flexible static site generator, with the minimal [xmin theme](https://github.com/yihui/hugo-xmin). The entire site was created and configured using [Claude Code](https://claude.ai/code), Anthropic's AI-powered development assistant. From setting up the initial Hugo installation to customizing the theme and creating content, Claude Code was used to do all the configuration and demonstrate the power of AI-assisted web development.
 
-## Connect
-
-Feel free to reach out if you'd like to discuss any of the topics I write about or have questions about the tools and techniques I share.
-
-[Add your contact information or social media links here]
