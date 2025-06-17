@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Andrew Moores Blog</title>
+    <link>https://example.org/categories/tools/</link>
+    <description>Recent content in Tools on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 14 Jun 2024 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Obsidian for Knowledge Management</title>
+      <link>https://example.org/posts/using-obsidian/</link>
+      <pubDate>Fri, 14 Jun 2024 12:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/using-obsidian/</guid>
+      <description>&lt;p&gt;Obsidian is a powerful note-taking app that creates a connected web of your thoughts using bi-directional links. It stores notes as plain markdown files on your local device, giving you complete control over your data. The graph view visualizes connections between your notes, helping you discover unexpected relationships in your knowledge base. Whether you&amp;rsquo;re a researcher, student, or professional, Obsidian transforms how you capture and connect ideas.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

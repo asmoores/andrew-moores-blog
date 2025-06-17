@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Andrew Moores Blog</title>
+    <link>https://example.org/tags/testing/</link>
+    <description>Recent content in Testing on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 17 Jun 2024 18:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Best Practices: Writing Reliable Software</title>
+      <link>https://example.org/posts/testing-best-practices/</link>
+      <pubDate>Mon, 17 Jun 2024 18:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/testing-best-practices/</guid>
+      <description>&lt;p&gt;Good testing practices are essential for building reliable, maintainable software. Whether you&amp;rsquo;re writing unit tests, integration tests, or end-to-end tests, following established patterns will help you catch bugs early and refactor with confidence.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-testing&#34;&gt;Types of Testing&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Unit Tests&lt;/strong&gt;: Test individual functions or components in isolation. They should be fast, focused, and independent.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Integration Tests&lt;/strong&gt;: Test how different parts of your system work together. These verify that modules integrate correctly.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;End-to-End Tests&lt;/strong&gt;: Test complete user workflows from start to finish. They provide confidence that the entire system works as expected.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

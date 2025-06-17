@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Andrew Moores Blog</title>
+    <link>https://example.org/tags/git/</link>
+    <description>Recent content in Git on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sun, 02 Jun 2024 10:30:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started with Git: Version Control Basics</title>
+      <link>https://example.org/posts/getting-started-with-git/</link>
+      <pubDate>Sun, 02 Jun 2024 10:30:00 +0000</pubDate>
+      <guid>https://example.org/posts/getting-started-with-git/</guid>
+      <description>&lt;p&gt;Git is a distributed version control system that tracks changes in your code over time. It&amp;rsquo;s an essential tool for any developer, whether working solo or in a team. Understanding Git fundamentals will make you more productive and confident in managing your projects.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-git&#34;&gt;Why Use Git?&lt;/h2&gt;&#xA;&lt;p&gt;Git provides several key benefits:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Track Changes&lt;/strong&gt;: See exactly what changed, when, and who made the change&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Collaboration&lt;/strong&gt;: Multiple developers can work on the same project simultaneously&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Backup&lt;/strong&gt;: Your code history is preserved, so you can always revert changes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Branching&lt;/strong&gt;: Work on features in isolation without affecting the main codebase&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;basic-git-commands&#34;&gt;Basic Git Commands&lt;/h2&gt;&#xA;&lt;p&gt;Here are the essential commands every developer should know:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

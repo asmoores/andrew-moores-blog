@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Andrew Moores Blog</title>
+    <link>https://example.org/tags/docker/</link>
+    <description>Recent content in Docker on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 17 Jun 2024 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Containers Explained: A Beginner&#39;s Guide</title>
+      <link>https://example.org/posts/docker-containers-explained/</link>
+      <pubDate>Mon, 17 Jun 2024 09:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/docker-containers-explained/</guid>
+      <description>&lt;p&gt;Docker has revolutionized how we develop, ship, and run applications. If you&amp;rsquo;re new to containers, this guide will help you understand what Docker is and why it&amp;rsquo;s become essential in modern software development.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-docker&#34;&gt;What is Docker?&lt;/h2&gt;&#xA;&lt;p&gt;Docker is a containerization platform that packages applications and their dependencies into lightweight, portable containers. Think of containers as standardized shipping containers - they can run anywhere Docker is installed, regardless of the underlying system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

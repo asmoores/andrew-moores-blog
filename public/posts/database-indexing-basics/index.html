@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database Indexing Basics: Speeding Up Your Queries X Andrew Moores Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom-styles.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom-styles.css" />
+
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1><a href="/">Andrew Moores Blog</a></h1>
+      <nav>
+        <ul class="menu">
+          
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/posts/">Posts</a></li>
+          
+          <li><a href="/about/">About</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+<div class="article-meta">
+<h1><span class="title">Database Indexing Basics: Speeding Up Your Queries</span></h1>
+
+<h2 class="date">2024/06/17</h2>
+</div>
+
+<main>
+<p>Database indexes are one of the most important tools for improving query performance. Understanding how they work and when to use them can dramatically speed up your applications and reduce database load.</p>
+<h2 id="what-is-a-database-index">What is a Database Index?</h2>
+<p>An index is a data structure that improves the speed of data retrieval operations. Think of it like an index in a book - instead of reading every page to find a topic, you can use the index to jump directly to the relevant pages.</p>
+<h2 id="how-indexes-work">How Indexes Work</h2>
+<p>When you create an index on a column, the database creates a separate structure that contains:</p>
+<ul>
+<li>The indexed column values (sorted)</li>
+<li>Pointers to the actual table rows</li>
+</ul>
+<p>This allows the database to quickly locate rows without scanning the entire table.</p>
+<h2 id="types-of-indexes">Types of Indexes</h2>
+<p><strong>Primary Index</strong>: Automatically created for primary keys, ensures uniqueness.</p>
+<p><strong>Secondary Index</strong>: Created on non-primary key columns for faster queries.</p>
+<p><strong>Composite Index</strong>: Covers multiple columns, useful for queries with multiple WHERE conditions.</p>
+<p><strong>Unique Index</strong>: Ensures no duplicate values while providing fast lookups.</p>
+<h2 id="when-to-use-indexes">When to Use Indexes</h2>
+<p><strong>Good candidates for indexing:</strong></p>
+<ul>
+<li>Columns frequently used in WHERE clauses</li>
+<li>Columns used in JOIN conditions</li>
+<li>Columns frequently used in ORDER BY</li>
+<li>Foreign key columns</li>
+</ul>
+<p><strong>Avoid indexing:</strong></p>
+<ul>
+<li>Columns with few unique values</li>
+<li>Columns that change frequently</li>
+<li>Small tables (overhead outweighs benefits)</li>
+</ul>
+<h2 id="creating-indexes">Creating Indexes</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Single column index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">INDEX</span> idx_lastname <span style="color:#66d9ef">ON</span> users(last_name);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Composite index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">INDEX</span> idx_name_email <span style="color:#66d9ef">ON</span> users(last_name, email);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Unique index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">UNIQUE</span> <span style="color:#66d9ef">INDEX</span> idx_username <span style="color:#66d9ef">ON</span> users(username);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Partial index (PostgreSQL)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">INDEX</span> idx_active_users <span style="color:#66d9ef">ON</span> users(email) <span style="color:#66d9ef">WHERE</span> active <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span></code></pre></div><h2 id="index-performance-tips">Index Performance Tips</h2>
+<ol>
+<li><strong>Monitor query performance</strong>: Use EXPLAIN to analyze query execution</li>
+<li><strong>Don&rsquo;t over-index</strong>: Each index has maintenance overhead</li>
+<li><strong>Consider composite indexes</strong>: Better than multiple single-column indexes</li>
+<li><strong>Index foreign keys</strong>: Essential for JOIN performance</li>
+<li><strong>Regular maintenance</strong>: Rebuild fragmented indexes periodically</li>
+</ol>
+<p>Proper indexing is crucial for database performance. Start with the most frequently queried columns and monitor performance to guide your indexing strategy.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

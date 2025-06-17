@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testing Best Practices: Writing Reliable Software X Andrew Moores Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom-styles.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom-styles.css" />
+
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1><a href="/">Andrew Moores Blog</a></h1>
+      <nav>
+        <ul class="menu">
+          
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/posts/">Posts</a></li>
+          
+          <li><a href="/about/">About</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+<div class="article-meta">
+<h1><span class="title">Testing Best Practices: Writing Reliable Software</span></h1>
+
+<h2 class="date">2024/06/17</h2>
+</div>
+
+<main>
+<p>Good testing practices are essential for building reliable, maintainable software. Whether you&rsquo;re writing unit tests, integration tests, or end-to-end tests, following established patterns will help you catch bugs early and refactor with confidence.</p>
+<h2 id="types-of-testing">Types of Testing</h2>
+<p><strong>Unit Tests</strong>: Test individual functions or components in isolation. They should be fast, focused, and independent.</p>
+<p><strong>Integration Tests</strong>: Test how different parts of your system work together. These verify that modules integrate correctly.</p>
+<p><strong>End-to-End Tests</strong>: Test complete user workflows from start to finish. They provide confidence that the entire system works as expected.</p>
+<h2 id="testing-principles">Testing Principles</h2>
+<h3 id="arrange-act-assert-aaa">Arrange, Act, Assert (AAA)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;should calculate total price with tax&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Arrange
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taxRate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.08</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Act
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateTotal</span>(<span style="color:#a6e22e">price</span>, <span style="color:#a6e22e">taxRate</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Assert
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">total</span>).<span style="color:#a6e22e">toBe</span>(<span style="color:#ae81ff">108</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h3 id="test-one-thing-at-a-time">Test One Thing at a Time</h3>
+<p>Each test should focus on a single behavior or scenario. This makes failures easier to diagnose and tests easier to understand.</p>
+<h3 id="write-descriptive-test-names">Write Descriptive Test Names</h3>
+<p>Test names should clearly describe what is being tested and what the expected outcome is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Good
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;should return empty array when no items match filter criteria&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Bad  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;filter test&#39;</span>)
+</span></span></code></pre></div><h2 id="common-testing-patterns">Common Testing Patterns</h2>
+<p><strong>Given-When-Then</strong>: Structure tests around scenarios</p>
+<ul>
+<li>Given: The initial state</li>
+<li>When: The action being tested</li>
+<li>Then: The expected outcome</li>
+</ul>
+<p><strong>Test Doubles</strong>: Use mocks, stubs, and spies to isolate units under test</p>
+<p><strong>Test Data Builders</strong>: Create reusable functions for generating test data</p>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Write tests first</strong>: TDD helps you think about the API design</li>
+<li><strong>Keep tests simple</strong>: Complex tests are hard to maintain and understand</li>
+<li><strong>Test behavior, not implementation</strong>: Focus on what the code does, not how</li>
+<li><strong>Run tests frequently</strong>: Use fast feedback loops</li>
+<li><strong>Maintain test code</strong>: Refactor tests as you refactor production code</li>
+</ol>
+<p>Good tests act as living documentation of your system&rsquo;s behavior and give you confidence to make changes. Invest in your testing practices - your future self will thank you.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

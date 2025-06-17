@@ -1,0 +1,9 @@
+/* Center align post titles */
+.post-title {
+    text-align: center !important;
+}
+
+/* Also center the single post title if needed */
+.post-single .post-title {
+    text-align: center !important;
+}

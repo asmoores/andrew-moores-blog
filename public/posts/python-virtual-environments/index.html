@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python Virtual Environments: Managing Dependencies Like a Pro X Andrew Moores Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom-styles.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom-styles.css" />
+
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1><a href="/">Andrew Moores Blog</a></h1>
+      <nav>
+        <ul class="menu">
+          
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/posts/">Posts</a></li>
+          
+          <li><a href="/about/">About</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+<div class="article-meta">
+<h1><span class="title">Python Virtual Environments: Managing Dependencies Like a Pro</span></h1>
+
+<h2 class="date">2024/06/17</h2>
+</div>
+
+<main>
+<p>Python virtual environments are essential for managing project dependencies and avoiding conflicts between different projects. They create isolated Python environments where you can install packages without affecting your system Python installation.</p>
+<h2 id="why-use-virtual-environments">Why Use Virtual Environments?</h2>
+<p><strong>Dependency Isolation</strong>: Each project has its own set of dependencies, preventing version conflicts.</p>
+<p><strong>Clean System</strong>: Keep your system Python installation clean and minimal.</p>
+<p><strong>Reproducibility</strong>: Easily recreate the same environment on different machines.</p>
+<p><strong>Experimentation</strong>: Test different package versions without breaking existing projects.</p>
+<h2 id="creating-virtual-environments">Creating Virtual Environments</h2>
+<h3 id="using-venv-python-33">Using venv (Python 3.3+)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Create a virtual environment</span>
+</span></span><span style="display:flex;"><span>python -m venv myproject_env
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate it (Linux/Mac)</span>
+</span></span><span style="display:flex;"><span>source myproject_env/bin/activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate it (Windows)</span>
+</span></span><span style="display:flex;"><span>myproject_env<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deactivate</span>
+</span></span><span style="display:flex;"><span>deactivate
+</span></span></code></pre></div><h3 id="using-virtualenv">Using virtualenv</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install virtualenv</span>
+</span></span><span style="display:flex;"><span>pip install virtualenv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create environment</span>
+</span></span><span style="display:flex;"><span>virtualenv myproject_env
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate (same as above)</span>
+</span></span><span style="display:flex;"><span>source myproject_env/bin/activate
+</span></span></code></pre></div><h2 id="managing-dependencies">Managing Dependencies</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install packages</span>
+</span></span><span style="display:flex;"><span>pip install requests flask
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save dependencies</span>
+</span></span><span style="display:flex;"><span>pip freeze &gt; requirements.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install from requirements</span>
+</span></span><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># List installed packages</span>
+</span></span><span style="display:flex;"><span>pip list
+</span></span></code></pre></div><h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>One environment per project</strong>: Don&rsquo;t mix project dependencies</li>
+<li><strong>Use requirements.txt</strong>: Document your dependencies</li>
+<li><strong>Activate before working</strong>: Always activate your environment first</li>
+<li><strong>Don&rsquo;t commit environments</strong>: Add venv folders to .gitignore</li>
+<li><strong>Use descriptive names</strong>: Name environments after your projects</li>
+</ol>
+<p>Virtual environments are fundamental to Python development. They ensure your projects remain isolated, reproducible, and manageable as they grow in complexity.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

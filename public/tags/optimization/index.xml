@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Andrew Moores Blog</title>
+    <link>https://example.org/tags/optimization/</link>
+    <description>Recent content in Optimization on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 17 Jun 2024 16:30:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database Indexing Basics: Speeding Up Your Queries</title>
+      <link>https://example.org/posts/database-indexing-basics/</link>
+      <pubDate>Mon, 17 Jun 2024 16:30:00 +0000</pubDate>
+      <guid>https://example.org/posts/database-indexing-basics/</guid>
+      <description>&lt;p&gt;Database indexes are one of the most important tools for improving query performance. Understanding how they work and when to use them can dramatically speed up your applications and reduce database load.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-database-index&#34;&gt;What is a Database Index?&lt;/h2&gt;&#xA;&lt;p&gt;An index is a data structure that improves the speed of data retrieval operations. Think of it like an index in a book - instead of reading every page to find a topic, you can use the index to jump directly to the relevant pages.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

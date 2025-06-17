@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrew Moores Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Andrew Moores Blog</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 14 Jun 2025 12:53:40 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 14 Jun 2025 12:53:40 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-andrew-moores&#34;&gt;About Andrew Moores&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my blog! I&amp;rsquo;m Andrew Moores, and this is where I share my thoughts on technology, development, and various tools that help make work more efficient.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-youll-find-here&#34;&gt;What You&amp;rsquo;ll Find Here&lt;/h2&gt;&#xA;&lt;p&gt;I write about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Software development tools and workflows&lt;/li&gt;&#xA;&lt;li&gt;Productivity applications like Obsidian&lt;/li&gt;&#xA;&lt;li&gt;AI Tools including Claude Code&lt;/li&gt;&#xA;&lt;li&gt;Domain Driven Design&lt;/li&gt;&#xA;&lt;li&gt;Designing and building APIs including OpenAPI specs and Imposter&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;[Add your professional background, education, or experience here]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building This Blog with Claude Code</title>
+      <link>http://localhost:1313/posts/installing-hugo/</link>
+      <pubDate>Fri, 14 Jun 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/installing-hugo/</guid>
+      <description>&lt;p&gt;I decided to start a blog and wanted to try something different - building it entirely with &lt;a href=&#34;https://claude.ai/code&#34;&gt;Claude Code&lt;/a&gt; as my development assistant. I gave Claude Code full permission to execute commands and edit files directly on my system. This post chronicles my experience creating this &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;-based blog from scratch, where every line of code, every file, and every command was executed by AI through our conversation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;starting-simple&#34;&gt;Starting Simple&lt;/h2&gt;&#xA;&lt;p&gt;I had Hugo already installed on my Mac (via &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;), but beyond that, I was starting completely fresh. My goal was simple: create a clean, fast blog that would showcase posts with previews on the home page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

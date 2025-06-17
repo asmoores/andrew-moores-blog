@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Building This Blog with Claude Code X Andrew Moores Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom-styles.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom-styles.css" />
+
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1><a href="/">Andrew Moores Blog</a></h1>
+      <nav>
+        <ul class="menu">
+          
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/posts/">Posts</a></li>
+          
+          <li><a href="/about/">About</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+<div class="article-meta">
+<h1><span class="title">Building This Blog with Claude Code</span></h1>
+
+<h2 class="date">2024/06/14</h2>
+</div>
+
+<main>
+<p>I decided to start a blog and wanted to try something different - building it entirely with <a href="https://claude.ai/code">Claude Code</a> as my development assistant. I gave Claude Code full permission to execute commands and edit files directly on my system. This post chronicles my experience creating this <a href="https://gohugo.io/">Hugo</a>-based blog from scratch, where every line of code, every file, and every command was executed by AI through our conversation.</p>
+<h2 id="starting-simple">Starting Simple</h2>
+<p>I had Hugo already installed on my Mac (via <a href="https://brew.sh/">Homebrew</a>), but beyond that, I was starting completely fresh. My goal was simple: create a clean, fast blog that would showcase posts with previews on the home page.</p>
+<h2 id="the-foundation">The Foundation</h2>
+<p>Claude Code helped me set up the basic structure. We started with a new Hugo site and chose the minimal <a href="https://github.com/yihui/hugo-xmin">xmin theme</a> for its simplicity:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site blog
+</span></span><span style="display:flex;"><span>cd blog
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/yihui/hugo-xmin.git themes/xmin
+</span></span></code></pre></div><p>The configuration file we built together was straightforward and focused on the immediate needs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-uk&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;Andrew Moores Blog&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;xmin&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginatePath</span> = <span style="color:#e6db74">&#34;page&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">customCSS</span> = [<span style="color:#e6db74">&#34;/css/custom-styles.css&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># googleAnalytics = &#34;G-XXXXXXXXXX&#34;</span>
+</span></span></code></pre></div><h2 id="making-it-look-good">Making It Look Good</h2>
+<p>The xmin theme provided a solid foundation, and we built on it to create something more personalized. Claude Code helped me create custom CSS that transformed the site&rsquo;s appearance to match my vision.</p>
+<p>We created a proper header layout with flex positioning and a horizontal navigation menu. We also implemented a centered content layout with better spacing and typography that felt more polished.</p>
+<h2 id="the-post-preview-challenge">The Post Preview Challenge</h2>
+<p>This was where things got interesting. I wanted the home page to show post previews, not just titles and dates like most blogs. I also wanted posts grouped by date, which seemed like a nice touch for organizing content.</p>
+<p>Claude Code helped me override Hugo&rsquo;s default list template. The trickiest part was getting the date grouping to work correctly while maintaining Hugo&rsquo;s pagination system. We ended up with a solution that groups posts by publication date and shows rich previews with tags and summaries.</p>
+<h2 id="adding-polish">Adding Polish</h2>
+<p>The final touches included pagination (set to 5 posts per page). Later, when I asked about tracking page visits and unique visitors, Claude Code helped me add <a href="https://analytics.google.com/">Google Analytics 4</a> integration. The implementation was smart - it won&rsquo;t slow down the site until I actually add my tracking ID, so the blog stays fast while I decide whether to enable tracking.</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<p>Building this blog with Claude Code was surprisingly smooth. The AI understood context well - when I asked for &ldquo;post previews,&rdquo; it knew I wanted summaries, tags, and proper styling, not just truncated text.</p>
+<p>The most impressive part was how it handled the complex Hugo templating for date grouping and pagination. I probably would have spent hours debugging template syntax on my own.</p>
+<p>One important thing to note is that Claude Code only implemented what I specifically asked for. It didn&rsquo;t anticipate future needs or proactively suggest features. For example, it never suggested adding pagination until I asked about it, and no mention was made of visitor tracking until I explicitly asked about recording page views. This meant our conversations were focused and efficient, but also meant I needed to think about what I wanted rather than relying on the AI to suggest improvements.</p>
+<h2 id="the-process">The Process</h2>
+<p>Every feature on this blog came from a conversation. I&rsquo;d describe what I wanted, Claude Code would write the code and execute the commands directly on my machine, and we&rsquo;d iterate until it was right. I never touched a text editor or terminal during this entire process - Claude Code handled all file creation, editing, git operations, and Hugo builds.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>The entire blog - from initial setup to the custom layouts, styling, and analytics integration - took just a few hours of back-and-forth conversation. What impressed me most was how the AI maintained consistency across all the code it generated and how it built features that worked well together.</p>
+<p>This post itself was written by asking Claude Code to &ldquo;document what we actually did&rdquo; and then refining it to be more personal. It&rsquo;s been an interesting experiment in hands-off AI development, where I provided direction but never directly touched the code or files.</p>
+<p>One amusing observation: I was surprised at how keen Claude was to lavish itself with superlatives, as can be seen in this post. Words like &ldquo;impressive,&rdquo; &ldquo;remarkable,&rdquo; and &ldquo;smooth&rdquo; peppered the initial draft. It took several rounds of editing to tone down the self-congratulation and stick to the facts.</p>
+<p>The blog is fast, clean, and has all the features I wanted. Most importantly, I understand how it all works because Claude Code explained each decision along the way. The experience has shown me what&rsquo;s possible when you trust AI tools with direct system access - the development speed and quality are remarkable.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

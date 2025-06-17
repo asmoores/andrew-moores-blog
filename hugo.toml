@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-uk'
+title = 'Andrew Moores Blog'
+theme = 'xmin'
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+paginate = 5
+paginatePath = "page"
+
+[params]
+customCSS = ["/css/custom-styles.css"]
+# googleAnalytics = "G-XXXXXXXXXX"  # Replace with your Google Analytics 4 Measurement ID
