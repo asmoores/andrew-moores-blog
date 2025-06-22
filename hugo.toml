@@ -31,3 +31,4 @@ paginatePath = "page"
 description = "Andrew Moores Blog - Thoughts on technology, development, and productivity tools including Hugo, Claude Code, Obsidian, and software engineering best practices"
 customCSS = ["/css/custom-styles.css"]
 googleAnalytics = "G-5W3XXPNZNE"
+footer = "© {Year} [Andrew Moores](https://andrewmoores.dev). Built with [Hugo](https://gohugo.io) and [Claude Code](https://claude.ai/code)."
