@@ -22,5 +22,6 @@ paginate = 5
 paginatePath = "page"
 
 [params]
+description = "Andrew Moores Blog - Thoughts on technology, development, and productivity tools including Hugo, Claude Code, Obsidian, and software engineering best practices"
 customCSS = ["/css/custom-styles.css"]
 # googleAnalytics = "G-XXXXXXXXXX"  # Replace with your Google Analytics 4 Measurement ID

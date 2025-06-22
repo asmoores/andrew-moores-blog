@@ -12,6 +12,15 @@
 <!-- SEO Meta Tags -->
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ .Permalink }}">
+{{ if .Description }}
+<meta name="description" content="{{ .Description }}">
+{{ else if .Summary }}
+<meta name="description" content="{{ .Summary | truncate 160 }}">
+{{ else if .IsHome }}
+<meta name="description" content="{{ .Site.Params.description | default "Andrew Moores Blog - Thoughts on technology, development, and productivity tools" }}">
+{{ else }}
+<meta name="description" content="{{ .Title }} - {{ .Site.Title }}">
+{{ end }}
 
 {{ with .Site.Params.customCSS }}
 {{ range . }}
