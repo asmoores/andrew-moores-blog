@@ -2,6 +2,7 @@ baseURL = 'https://andrewmoores.dev/'
 languageCode = 'en-uk'
 title = 'Andrew Moores Blog'
 theme = 'xmin'
+enableRobotsTXT = true
 
 [[menu.main]]
 name = "Home"
