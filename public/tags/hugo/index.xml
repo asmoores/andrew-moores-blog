@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Andrew Moores Blog</title>
-    <link>https://example.org/tags/hugo/</link>
+    <link>http://localhost:1313/tags/hugo/</link>
     <description>Recent content in Hugo on Andrew Moores Blog</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <lastBuildDate>Fri, 14 Jun 2024 10:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installing Hugo: A Quick Start Guide</title>
-      <link>https://example.org/posts/installing-hugo/</link>
+      <title>Building This Blog with Claude Code</title>
+      <link>http://localhost:1313/posts/building-blog-with-claude-code/</link>
       <pubDate>Fri, 14 Jun 2024 10:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/installing-hugo/</guid>
-      <description>&lt;h1 id=&#34;installing-hugo-a-quick-start-guide&#34;&gt;Installing Hugo: A Quick Start Guide&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is a fast and flexible static site generator written in Go. Getting started with Hugo is straightforward, and you can have a site up and running in minutes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-hugo&#34;&gt;What is Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the most popular open-source static site generators. It&amp;rsquo;s designed for speed and flexibility, making it perfect for blogs, documentation sites, portfolios, and more.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation-methods&#34;&gt;Installation Methods&lt;/h2&gt;&#xA;&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Using Homebrew (Recommended):&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/building-blog-with-claude-code/</guid>
+      <description>&lt;p&gt;I decided to start a blog and wanted to try something different - building it entirely with &lt;a href=&#34;https://claude.ai/code&#34;&gt;Claude Code&lt;/a&gt; as my development assistant. I gave Claude Code full permission to execute commands and edit files directly on my system. This post chronicles my experience creating this &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;-based blog from scratch, where every line of code, every file, and every command was executed by AI through our conversation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;starting-simple&#34;&gt;Starting Simple&lt;/h2&gt;&#xA;&lt;p&gt;I had Hugo already installed on my Mac (via &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;), but beyond that, I was starting completely fresh. My goal was simple: create a clean, fast blog that would showcase posts with previews on the home page.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

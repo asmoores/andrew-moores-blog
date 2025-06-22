@@ -100,6 +100,14 @@ body header h1 a {
     margin-right: 1rem;
 }
 
+.read-time {
+    display: inline-block;
+    color: #888;
+    font-size: 0.85rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
 .tags {
     display: inline-block;
 }

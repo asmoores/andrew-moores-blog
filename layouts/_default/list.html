@@ -18,6 +18,7 @@
       <header>
         <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <div class="post-meta">
+          <span class="read-time">{{ .ReadingTime }} min read</span>
           {{ with .Params.tags }}
           <span class="tags">
             {{ range . }}
