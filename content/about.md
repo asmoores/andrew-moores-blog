@@ -13,10 +13,10 @@ Welcome to my blog! I'm Andrew Moores, and this is where I share my thoughts on 
 I write about:
 
 - Software development tools and workflows
-- Productivity applications like [Obsidian](https://obsidian.md/)
+- Productivity applications
 - AI Tools including [Claude Code](https://claude.ai/code)
 - [Domain Driven Design](https://martinfowler.com/bliki/DomainDrivenDesign.html)
-- Designing and building APIs including [OpenAPI specs](https://spec.openapis.org/oas/latest.html) and [Imposter](https://www.imposter.sh/)
+- Designing, building, testing and mocking APIs using [OpenAPI specs](https://spec.openapis.org/oas/latest.html)
 
 ## Background
 
