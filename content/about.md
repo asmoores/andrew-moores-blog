@@ -22,6 +22,8 @@ I write about:
 
 I am a software engineer who has been programming for 35 years, currently in Java, TypeScript, and Python.
 
+You can find my code and projects on [GitHub](https://github.com/asmoores).
+
 ## About this site
 
 This blog is built using [Hugo](https://gohugo.io/), a fast and flexible static site generator, with the minimal [xmin theme](https://github.com/yihui/hugo-xmin). The entire site was created and configured using [Claude Code](https://claude.ai/code), Anthropic's AI-powered development assistant. From setting up the initial Hugo installation to customizing the theme and creating content, Claude Code was used to do all the configuration and demonstrate the power of AI-assisted web development.

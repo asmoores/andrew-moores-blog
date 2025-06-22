@@ -19,6 +19,11 @@ name = "About"
 url = "/about/"
 weight = 3
 
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/asmoores"
+weight = 4
+
 paginate = 5
 paginatePath = "page"
 
