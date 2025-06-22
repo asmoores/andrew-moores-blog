@@ -9,6 +9,10 @@
 </script>
 {{ end }}
 
+<!-- SEO Meta Tags -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ .Permalink }}">
+
 {{ with .Site.Params.customCSS }}
 {{ range . }}
 <link rel="stylesheet" href="{{ . | relURL }}" />
