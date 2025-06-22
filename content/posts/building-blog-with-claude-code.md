@@ -2,6 +2,7 @@
 title: "Building This Blog with Claude Code"
 date: 2024-06-14T10:00:00-00:00
 draft: false
+slug: "building-blog-with-claude-code"
 tags: ["hugo", "claude-code", "ai-development", "blogging"]
 categories: ["personal"]
 ---
