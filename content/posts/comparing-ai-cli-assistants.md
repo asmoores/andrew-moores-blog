@@ -4,8 +4,6 @@ draft = false
 title = 'Comparing AI CLI Assistants'
 +++
 
-# Comparing AI CLI Assistants
-
 ## Introduction
 
 I'm currently using an AI coding assistant in my day job, and based on my experience, I wanted to test the tools available in this space. With the popularity of AI-powered development tools, several command-line interface (CLI) assistants have emerged to help developers work more efficiently. This post explores and compares the major players based on my hands-on testing.
